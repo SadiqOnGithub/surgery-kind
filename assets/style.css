@@ -1,0 +1,271 @@
+/* ===========================
+GLOBAL
+==============================*/
+
+:root {
+  --acent-color: #1a76d1;
+  --acent-color-hover: #2d2e40;
+  --bg-color: hsl(50, 70%, 95%);
+  --our-white: white;
+  --our-black: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--our-white);
+}
+
+img {
+  max-width: 100%;
+}
+/* ===========================
+LAYOUT
+==============================*/
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: rgb(0, 0, 255, 0.1); */
+}
+
+.section-spacing {
+  margin-bottom: 8em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--acent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--acent-color-hover);
+}
+
+/* ===========================
+TYPOGRAPGY
+==============================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+p {
+  max-width: 65ch;
+  line-height: 1.5;
+}
+/* ===========================
+HEADER
+==============================*/
+
+.header {
+  background-color: var(--bg-color);
+  padding: 1em 0;
+  box-shadow: 0 0.1em 5px rgb(0, 0, 0, 0.4);
+}
+
+.header__title {
+  letter-spacing: 0.1em;
+}
+
+.header__sub-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.header__list {
+  list-style: none;
+  padding: 0;
+}
+
+.header__list li {
+  padding: 0 1.25em 0 0;
+}
+
+.header__list a {
+  text-decoration: none;
+}
+
+/* ===========================
+HERO
+===============================*/
+
+.hero {
+  background: url(https://hindmeditour.com/en/assets/img/hero-slider/slider-1.jpg)
+    center center no-repeat;
+  color: white;
+}
+
+.hero__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero--flex {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero__sub-title {
+  font-size: 2rem;
+  margin-bottom: 0.75em;
+}
+
+.hero__title {
+  margin-bottom: 0.75em;
+}
+
+.hero__description {
+  font-size: 1.5rem;
+  margin-bottom: 1.25em;
+}
+
+/* ===========================
+specialties
+===============================*/
+
+.specialties--flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.specialties__title {
+  margin-bottom: 1em;
+}
+
+.specialties__list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 6em;
+  display: flex;
+  align-items: center;
+}
+
+.specialties__list li {
+  background-color: var(--our-white);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
+  padding: 1em 0;
+  min-width: 15%;
+  margin: 0 1em 0 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.specialties__list a {
+  text-decoration: none;
+}
+
+.specialties__list i {
+  font-size: 4rem;
+  color: var(--acent-color);
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.specialties__list span {
+  color: var(--our-black);
+}
+
+/* ========================
+TOP DOCTORS 
+==========================*/
+
+.doctors {
+  text-align: center;
+  margin: 0 auto;
+  padding: 4em 0;
+  background-color: var(--bg-color);
+}
+
+.doctors__title {
+  margin-bottom: 0.5em;
+}
+
+.doctors__sub-title {
+  margin: 0 auto 2em;
+}
+
+.doctors__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.doctors__row__single-doctor {
+  background-color: var(--our-white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 22.5%;
+}
+
+.doctors__row__single-doctor img {
+  border-radius: 5px 5px 0 0;
+}
+
+.doctors__row .doctor-content {
+  padding: 1em 0.75em;
+}
+
+.doctors__row .doctor-content h5 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+}
+
+.doctors__row .doctor-content a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.doctors__row .doctor-content span {
+  font-size: 1.3rem;
+  color: var(--acent-color);
+}
+
+.doctors__btn {
+  display: inline-block;
+  /* margin-bottom: 10em; */
+}
